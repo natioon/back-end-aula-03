@@ -25,19 +25,5 @@ O servidor roda na porta `3000` e gerencia uma lista de usuários armazenada em 
 | **POST** | `/usuarios` | Cadastra um novo usuário no arquivo `dados.json`. | `201 Created` / `400 Bad Request` |
 
 ---
-
-## ⚙️ Como Testar as Rotas (Dica)
-
-Como este projeto agora aceita requisições do tipo **POST** (para enviar dados), você não conseguirá testar tudo apenas abrindo o navegador. É recomendável utilizar ferramentas de testes de API como:
-* **Postman**
-* **Insomnia**
-* Extensão **Thunder Client** (direto no VS Code/Codespace)
-
-### Exemplo de Corpo (Body) para o POST `/usuarios`:
-Ao enviar um novo usuário, configure a requisição como `JSON` e envie no seguinte formato:
-```json
-{
-  "id": 3,
-  "nome": "Antônio Carlos",
   "email": "antonio@exemplo.com"
 }
